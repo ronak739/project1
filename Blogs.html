@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navigtion {
+
+            background-color: rgb(1, 1, 50);
+
+        }
+
+        .navigtion ul {
+
+            display: flex;
+            justify-content: space-around;
+            padding-left: 700px;
+            flex-wrap: wrap;
+            margin-top: -60px;
+            padding-bottom: 40px;
+
+
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li a:hover {
+            color: lightblue;
+
+        }
+
+        li a:active {
+            color: lightsalmon;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        ul li:hover {
+            color: lightblue;
+            text-decoration: underline;
+            text-shadow: 2px 2px 8px lightblue;
+        }
+
+        ul li:active {
+            color: lightsalmon;
+            text-decoration: underline;
+            text-shadow: 2px 2px 8px blue;
+        }
+
+        .logo img {
+            height: 90px;
+            width: 140px;
+            display: block;
+            margin: -10px;
+            padding-left: 10%;
+            padding-top: 10px;
+
+        }
+
+        .img .body-section-text {
+            background: rgba(0, 0, 0, 0.7)url(12.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+
+        }
+
+        .body-section-text h3 {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 90px;
+            padding-bottom: 40px;
+        }
+
+        .body-section-text p {
+            color: white;
+            font-size: 19px;
+            text-align: center;
+            padding-bottom: 90px;
+        }
+
+        .blogs-descriptoin h3 {
+            text-align: left;
+            font-size: 40px;
+            margin: 20px 0;
+            margin-top: 90px;
+        }
+
+        .blogs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 20%;
+        }
+
+        .blog-post {
+            width: 30%;
+            text-align: center;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+        .blog-post h3 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .blog-post p {
+            font-size: 14px;
+        }
+
+        .blog-post a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contaner {
+            margin: 0 10%;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            margin-bottom: 20%;
+        }
+
+        .image {
+            flex: 1;
+            max-width: 45%;
+            border-radius: 5px;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 60%;
+            padding: 20px;
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        .content p {
+            color: gray;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .main {
+            max-width: 600px;
+            margin-bottom: 20%;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .recent-posts {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+        .tags {
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            margin: 5px 5px 0 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .footer-1 {
+            background-color: #E6E6E7;
+            height: 300px;
+            margin-top: 50px;
+        }
+
+        /*footer{
+    margin-left: 70px;
+    padding-top:70px;
+}*/
+        .foot-box {
+            margin-left: 70px;
+            width: 32%;
+        }
+
+        .foot-box1 {
+            width: 20%;
+        }
+
+        .foot-box1 h3 {
+            padding-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .foot-box1 p {
+            padding-bottom: 5px;
+        }
+
+        .footer-1 img {
+            width: 90px;
+        }
+
+
+
+        .main-footer {
+            width: 100%;
+            padding-top: 40px;
+
+        }
+
+        .footer-1 .main-footer div {
+            /*		width: 23%;*/
+            float: left;
+        }
+
+        .main-footer div div {
+            margin-left: 90px;
+        }
+
+        .foot-box1 img {
+            height: 35px;
+            width: 40px;
+            margin-left: -5px;
+        }
+
+        .line {
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 10px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <div class="img">
+        <div class="navigtion">
+            <nav>
+                <div class="logo">
+                    <img src="org logo.png" alt="logo">
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Swatic.html">Home</a></li>
+                        <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/gallery.html">Gallary</a></li>
+                        <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/teachers.html">Teachers</a></li>
+                        <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/about.html">About</a></li>
+                        <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Cotact%20Us.html">Contact us</a>
+                        </li>
+                        <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Blog section -->
+        <div class="contaner">
+            <div class="blogs-descriptoin">
+                <h3>Blogs</h3>
+            </div>
+
+            <div class="blogs">
+                <div class="blog-post">
+                    <img src="blog1.webp" alt="Blog Image 1">
+                    <h3>Kegiatan Belajar Mengajar di Rumah 2020</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More...</a></p>
+                </div>
+                <div class="blog-post">
+                    <img src="blog2.jpg" alt="Blog Image 2">
+                    <h3>Kegiatan Belajar Mengajar di Rumah</h3>
+                    <p>Aliquam erat volutpat. Vivamus ac elit euismod... <a href="#">Read More...</a></p>
+                </div>
+                <div class="blog-post">
+                    <img src="blog3.jpg" alt="Blog Image 3">
+                    <h3>Belajar dirumah</h3>
+                    <p>Phasellus eget sapien sagittis, elementum velit eu... <a href="#">Read More...</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- blog description -->
+        <div class="contaner">
+            <div class="container">
+                <img src="bdd.jpg" alt="Learning at Home" class="image">
+                <div class="content">
+                    <h2>Kegiatan Belajar Mengajar dirumah</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis lorem ipsum. Quisque neque
+                        nisi, dapibus quis felis eget, aliquam faucibus diam.</p>
+                    <a href="#" class="button">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog section -->
+        <div class="contaner">
+
+
+            <div class="blogs">
+                <div class="blog-post">
+                    <img src="blog1.webp" alt="Blog Image 1">
+                    <h3>Kegiatan Belajar Mengajar di Rumah 2020</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="#">Read More...</a></p>
+                </div>
+                <div class="blog-post">
+                    <img src="blog2.jpg" alt="Blog Image 2">
+                    <h3>Kegiatan Belajar Mengajar di Rumah</h3>
+                    <p>Aliquam erat volutpat. Vivamus ac elit euismod... <a href="#">Read More...</a></p>
+                </div>
+                <div class="blog-post">
+                    <img src="blog3.jpg" alt="Blog Image 3">
+                    <h3>Belajar dirumah</h3>
+                    <p>Phasellus eget sapien sagittis, elementum velit eu... <a href="#">Read More...</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- last blog -->
+        <div class="contaner">
+            <div class="main">
+                <img src="lb.jpeg" alt="Image Description" class="image">
+                <div class="title">Kegiatan Pembelajaran daring</div>
+                <div class="description">
+                    Deskripsi singkat tentang kegiatan pembelajaran daring...
+                    <span class="read-more">Read More</span>
+                </div>
+                <div class="recent-posts">Recent Post</div>
+                <div class="tags">
+                    <div class="tag">Post 1</div>
+                    <div class="tag">Post 2</div>
+                    <div class="tag">Post 3</div>
+                    <div class="tag">Post 4</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer-1">
+            <div class="main-footer">
+                <div class="foot-box">
+                    <img src="org logo.png"><br>
+
+                    <p>Swastic School ner new Civil Hospital,<br> Holichkala Asarwa,
+                        Ahamdabad-380016, <br>Indonesia, (0266)531333</p>
+
+                    <p><b>info@smpn1cibadak.sch.id</b></p>
+                    <p><b>smpn1cbd_kabsi@yahoo.co.id</b></p>
+                </div>
+
+                <div class="foot-box1">
+                    <h3>Jelajah</h3>
+                    <p><b>Sambutan</b></p>
+                    <p><b>Profil Sekolah</b></p>
+                    <p><b>Berita</b></p>
+                    <p><b>Galeri</b></p>
+
+                </div>
+
+                <div class="foot-box1">
+                    <h3>Halaman Umum</h3>
+                    <p><b>Data Guru</b></p>
+                    <p><b>PPDB SMPN 1 Cibadak</b></p>
+                    <p><b>Panduan PPDB</b></p>
+                    <p><b>Lokasi</b></p>
+                    <p><b>Kontak</b>
+                </div>
+
+                <div class="foot-box1">
+                    <h3>Media Social</h3>
+                    <a href="#"><img src="ff1.png" alt="Facebook"></a>
+                    <a href="#"><img src="twt 1.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram image 2.png" alt="INSTAGRAM"></a>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <p>2024 Swastic School . All rights reserved</p>
+        </div>
+</body>
+
+</html>

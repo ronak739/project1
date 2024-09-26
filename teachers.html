@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navigtion {
+
+            background-color: rgb(1, 1, 50);
+
+        }
+
+        .navigtion ul {
+
+            display: flex;
+            justify-content: space-around;
+            padding-left: 700px;
+            flex-wrap: wrap;
+            margin-top: -60px;
+            padding-bottom: 40px;
+
+
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li a:hover {
+            color: lightblue;
+
+        }
+
+        li a:active {
+            color: lightsalmon;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        ul li:hover {
+            color: lightblue;
+            text-decoration: underline;
+            text-shadow: 2px 2px 8px lightblue;
+        }
+
+        ul li:active {
+            color: lightsalmon;
+            text-decoration: underline;
+            text-shadow: 2px 2px 8px blue;
+        }
+
+        .logo img {
+            height: 90px;
+            width: 140px;
+            display: block;
+            margin: -10px;
+            padding-left: 90px;
+            padding-top: 10px;
+
+        }
+
+        .img .body-section-text {
+            background: rgba(0, 0, 0, 0.7)url(12.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+
+        }
+
+        .body-section-text h3 {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 90px;
+            padding-bottom: 40px;
+        }
+
+        .body-section-text p {
+            color: white;
+            font-size: 19px;
+            text-align: center;
+            padding-bottom: 90px;
+        }
+
+        .search-bar {
+            margin: 20px 0;
+            text-align: end;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+
+        }
+
+        .user-flex {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px
+        }
+
+        .user1-flex {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px
+        }
+
+        .user2-flex {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px
+        }
+
+        .user-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .user-card img {
+            width: 273px;
+            height: 185px;
+        }
+
+        .user-info {
+            padding: 10px;
+        }
+
+        hr {
+            color: #ccc;
+            height: 1px;
+        }
+
+        .contaner {
+            margin: 0 10%;
+        }
+
+
+
+
+
+
+
+        .footer-1 {
+            background-color: #E6E6E7;
+            height: 300px;
+            margin-top: 20%;
+        }
+
+        .foot-box {
+            margin-left: 70px;
+            width: 32%;
+        }
+
+        .foot-box1 {
+            width: 20%;
+        }
+
+        .foot-box1 h3 {
+            padding-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .foot-box1 p {
+            padding-bottom: 5px;
+        }
+
+        .footer-1 img {
+            width: 90px;
+        }
+
+
+
+        .main-footer {
+            width: 100%;
+            padding-top: 40px;
+
+        }
+
+        .footer-1 .main-footer div {
+            /*		width: 23%;*/
+            float: left;
+        }
+
+        .main-footer div div {
+            margin-left: 90px;
+        }
+
+        .foot-box1 img {
+            height: 35px;
+            width: 40px;
+            margin-left: -5px;
+        }
+
+        .line {
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 10px 0;
+        }
+
+        @media only screen and (max-width: 800px) {
+
+            .container {
+                width: 790px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .user-flex {
+                display: unset;
+            }
+
+
+            .user-card img {
+                width: 630px;
+                height: 384px;
+            }
+
+
+            .user-card {
+                width: 632px;
+                text-align: unset;
+            }
+
+            .user-info p {
+                font-size: 30px;
+            }
+
+            .user1-flex {
+                display: unset;
+
+            }
+
+            .user-card img {
+                width: 630px;
+                height: 384px;
+            }
+
+
+            .user-card {
+                width: 632px;
+                text-align: unset;
+            }
+
+            .user-info p {
+                font-size: 30px;
+            }
+
+            .user2-flex {
+                display: unset;
+                flex-wrap: wrap;
+                padding: 20px;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <div class="container">
+        <div class="img">
+            <div class="navigtion">
+                <nav>
+                    <div class="logo">
+                        <img src="org logo.png" alt="logo">
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Swatic.html">Home</a></li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/gallery.html">Gallary</a></li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/teachers.html">Teachers</a>
+                            </li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/about.html">About</a></li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Cotact%20Us.html">Contact
+                                    us</a>
+                            </li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Blogs.html">Blogs</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+
+            <!-- body section -->
+            <div class="img">
+                <div class="body-section-text">
+                    <h3>Our Best Facultys</h3>
+                    <p>Ini adalah sambutan dari kepala sekolah SMP Negeri 1 Cibadak sekolah SMP Negeri 1 Cibadak.</p>
+                </div>
+            </div>
+
+            <!-- Galler section -->
+            <div class="contaner">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search profiles...">
+                </div>
+
+                <hr>
+                <div class="user-flex">
+                    <div class="user-card">
+                        <img src="ter1.jpeg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 1</p>
+                            <p><strong>ID:</strong> ID 1</p>
+                            <p><strong>Age:</strong> Age 1</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter2.jpeg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 2</p>
+                            <p><strong>ID:</strong> ID 2</p>
+                            <p><strong>Age:</strong> Age 2</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter3.jpg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 3</p>
+                            <p><strong>ID:</strong> ID 3</p>
+                            <p><strong>Age:</strong> Age 3</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter3.jpg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 3</p>
+                            <p><strong>ID:</strong> ID 3</p>
+                            <p><strong>Age:</strong> Age 3</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="user1-flex">
+                    <div class="user-card">
+                        <img src="ter4.avif" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 4</p>
+                            <p><strong>ID:</strong> ID 4</p>
+                            <p><strong>Age:</strong> Age 4</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter5.jpeg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 5</p>
+                            <p><strong>ID:</strong> ID 5</p>
+                            <p><strong>Age:</strong> Age 5</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter6.jpg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 6</p>
+                            <p><strong>ID:</strong> ID 6</p>
+                            <p><strong>Age:</strong> Age 6</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter6.jpg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 6</p>
+                            <p><strong>ID:</strong> ID 6</p>
+                            <p><strong>Age:</strong> Age 6</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="user2-flex">
+                    <div class="user-card">
+                        <img src="ter7.jpeg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 4</p>
+                            <p><strong>ID:</strong> ID 4</p>
+                            <p><strong>Age:</strong> Age 4</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter8.avif" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 5</p>
+                            <p><strong>ID:</strong> ID 5</p>
+                            <p><strong>Age:</strong> Age 5</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter9.jpeg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 6</p>
+                            <p><strong>ID:</strong> ID 6</p>
+                            <p><strong>Age:</strong> Age 6</p>
+                        </div>
+                    </div>
+
+                    <div class="user-card">
+                        <img src="ter9.jpeg" alt="User Photo">
+                        <div class="user-info">
+                            <p><strong>Name:</strong> Name 6</p>
+                            <p><strong>ID:</strong> ID 6</p>
+                            <p><strong>Age:</strong> Age 6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer-1">
+                <div class="main-footer">
+                    <div class="foot-box">
+                        <img src="org logo.png"><br>
+
+                        <p>Swastic School ner new Civil Hospital,<br> Holichkala Asarwa,
+                            Ahamdabad-380016, <br>Indonesia, (0266)531333</p>
+
+                        <p><b>info@smpn1cibadak.sch.id</b></p>
+                        <p><b>smpn1cbd_kabsi@yahoo.co.id</b></p>
+                    </div>
+
+                    <div class="foot-box1">
+                        <h3>Jelajah</h3>
+                        <p><b>Sambutan</b></p>
+                        <p><b>Profil Sekolah</b></p>
+                        <p><b>Berita</b></p>
+                        <p><b>Galeri</b></p>
+
+                    </div>
+
+                    <div class="foot-box1">
+                        <h3>Halaman Umum</h3>
+                        <p><b>Data Guru</b></p>
+                        <p><b>PPDB SMPN 1 Cibadak</b></p>
+                        <p><b>Panduan PPDB</b></p>
+                        <p><b>Lokasi</b></p>
+                        <p><b>Kontak</b>
+                    </div>
+
+                    <div class="foot-box1">
+                        <h3>Media Social</h3>
+                        <a href="#"><img src="ff1.png" alt="Facebook"></a>
+                        <a href="#"><img src="twt 1.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram image 2.png" alt="INSTAGRAM"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <p>2024 Swastic School . All rights reserved</p>
+            </div>
+        </div>
+</body>
+
+</html>

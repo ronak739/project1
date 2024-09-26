@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navigtion {
+
+            background-color: rgb(1, 1, 50);
+
+        }
+
+        .navigtion ul {
+
+            display: flex;
+            justify-content: space-around;
+            padding-left: 700px;
+            flex-wrap: wrap;
+            margin-top: -60px;
+            padding-bottom: 40px;
+
+
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li a:hover {
+            color: lightblue;
+
+        }
+
+        li a:active {
+            color: lightsalmon;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        ul li:hover {
+            color: lightblue;
+            text-decoration: underline;
+            text-shadow: 2px 2px 8px lightblue;
+        }
+
+        ul li:active {
+            color: lightsalmon;
+            text-decoration: underline;
+            text-shadow: 2px 2px 8px blue;
+        }
+
+        .logo img {
+            height: 90px;
+            width: 140px;
+            display: block;
+            margin: -10px;
+            padding-left: 10%;
+            padding-top: 10px;
+
+        }
+
+        .contaner {
+            margin: 0 10%;
+        }
+
+        .gallery-description h3 {
+            text-align: center;
+            font-size: 30px;
+            margin: 50px 0;
+        }
+
+        .gallery-img img {
+            width: 290px;
+            height: 183px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+
+
+        .gallery-img {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20%;
+        }
+
+        .footer-1 {
+            background-color: #E6E6E7;
+            height: 300px;
+            margin-top: 50px;
+            display: flex;
+
+        }
+
+        /*footer{
+    margin-left: 70px;
+    padding-top:70px;
+}*/
+        .foot-box {
+            margin-left: 123px;
+            width: 30%;
+        }
+
+        .foot-box1 {
+            width: 20%;
+        }
+
+        .foot-box1 h3 {
+            padding-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .foot-box1 p {
+            padding-bottom: 5px;
+        }
+
+        .footer-1 img {
+            width: 90px;
+        }
+
+
+
+        .main-footer {
+            width: 100%;
+            padding-top: 40px;
+
+        }
+
+        .footer-1 .main-footer div {
+            /*		width: 23%;*/
+            float: left;
+        }
+
+        .main-footer div div {
+            margin-left: 90px;
+        }
+
+        .foot-box1 img {
+            height: 35px;
+            width: 40px;
+            margin-left: -5px;
+        }
+
+        .line {
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 10px 0;
+        }
+
+        @media only screen and (max-width: 800px) {
+
+            .container {
+                width: 795px;
+            }
+
+            .footer-1 {
+                background-color: #E6E6E7;
+                height: 808px;
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            .gallery-img {
+                display: unset;
+            }
+
+            .main-gallery {
+                margin-right: 50px;
+            }
+
+            .gallery-img img {
+                width: 530px;
+                height: 319px;
+            }
+
+            .gallery-description h3 {
+                text-align: unset;
+                font-size: 58px;
+                margin-left: 180px;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            .footer-1 {
+                background-color: #E6E6E7;
+                height: 808px;
+                width: 100%;
+            }
+
+            .footer-1 .main-footer div {
+                float: unset;
+                margin-left: 50px;
+                margin-top: 50px;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+
+            .foot-box p {
+                font-size: 27px;
+
+            }
+
+            .foot-box1 p {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- navigation -->
+        <div class="img">
+            <div class="navigtion">
+                <nav>
+                    <div class="logo">
+                        <img src="org logo.png" alt="logo">
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Swatic.html">Home</a></li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/gallery.html">Gallary</a></li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/teachers.html">Teachers</a>
+                            </li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/about.html">About</a></li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Cotact%20Us.html">Contact
+                                    us</a>
+                            </li>
+                            <li><a href="file:///C:/Users/ronak/Desktop/webite%20project/Blogs.html">Blogs</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Gallery section -->
+            <div class="contaner">
+                <div class="gallery-description">
+                    <h3>Gallary</h3>
+                    <div class="main-gallery">
+                        <div class="gallery-img">
+                            <img src="s1.jpeg" alt="">
+                            <img src="s2.jpeg" alt="">
+                            <img src="s3.jpeg" alt="">
+                            <img src="s4.jpeg" alt="">
+                            <img src="s5.1.jpg" alt="">
+                            <img src="s6.jpeg" alt="">
+                            <img src="s7.jpg" alt="">
+                            <img src="s8.jpeg" alt="">
+                            <img src="s9.avif" alt="">
+                            <img src="s10.avif" alt="">
+                            <img src="s11.jpg" alt="">
+                            <img src="s12.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+
+            <div class="footer-1">
+
+                <div class="main-footer">
+                    <div class="foot-box">
+                        <img src="org logo.png"><br>
+
+                        <p>Swastic School ner new Civil Hospital,<br> Holichkala Asarwa,
+                            Ahamdabad-380016, <br>Indonesia, (0266)531333</p>
+
+                        <p><b>info@smpn1cibadak.sch.id</b></p>
+                        <p><b>smpn1cbd_kabsi@yahoo.co.id</b></p>
+                    </div>
+
+                    <div class="foot-box1">
+                        <h3>Jelajah</h3>
+                        <p><b>Sambutan</b></p>
+                        <p><b>Profil Sekolah</b></p>
+                        <p><b>Berita</b></p>
+                        <p><b>Galeri</b></p>
+
+                    </div>
+
+                    <div class="foot-box1">
+                        <h3>Halaman Umum</h3>
+                        <p><b>Data Guru</b></p>
+                        <p><b>PPDB SMPN 1 Cibadak</b></p>
+                        <p><b>Panduan PPDB</b></p>
+                        <p><b>Lokasi</b></p>
+                        <p><b>Kontak</b>
+                    </div>
+
+                    <div class="foot-box1">
+                        <h3>Media Social</h3>
+                        <a href="#"><img src="ff1.png" alt="Facebook"></a>
+                        <a href="#"><img src="twt 1.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram image 2.png" alt="INSTAGRAM"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line">
+                <p>2024 Swastic School . All rights reserved</p>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
